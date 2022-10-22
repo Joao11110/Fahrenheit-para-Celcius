@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<locale.h>
+
+int main(){
+	float f,c;
+	setlocale(LC_ALL, "Portuguese");
+	printf("Enter the temperature in Fahrenheit: ");
+	scanf("%f",&f);
+	c = (f-32) / 1.8;
+	printf("The temperature in Celcius is: %.1f",c);
+	return 0;
+}
+
